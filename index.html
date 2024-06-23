@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Audio Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Text-to-Audio Generator</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="centered">
+                <h2>Convert Text to Audio</h2>
+                <div class="audio-box">
+                    <input type="text" id="textInput" placeholder="Enter text...">
+                    <button id="generateBtn">Generate Audio</button>
+                </div>
+                <audio controls id="audioPlayer"></audio>
+            </section>
+            <section id="about" class="centered">
+                <h2>About</h2>
+                <p>This AI assistant converts text to audio using Web Speech API. Rate your experience below:</p>
+                <div id="rating">
+                    <input type="radio" name="rating" id="star5" value="5"><label for="star5"></label>
+                    <input type="radio" name="rating" id="star4" value="4"><label for="star4"></label>
+                    <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
+                    <input type="radio" name="rating" id="star2" value="2"><label for="star2"></label>
+                    <input type="radio" name="rating" id="star1" value="1"><label for="star1"></label>
+                </div>
+            </section>
+            <section id="features" class="centered">
+                <h2>Features</h2>
+                <ul>
+                    <li>High-quality text-to-speech conversion</li>
+                    <li>Customizable voice options</li>
+                    <li>Multiple languages support</li>
+                    <li>Easy-to-use interface</li>
+                </ul>
+            </section>
+            <section id="contact" class="centered">
+                <h2>Contact</h2>
+                <p>For any inquiries or feedback, please contact us:</p>
+                <ul>
+                    <li>Email: example@example.com</li>
+                    <li>Phone: +1234567890</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Text-to-Audio Generator | Created by [Your Name]</p>
+        </footer>
+    </div>
+</body>
+</html>
