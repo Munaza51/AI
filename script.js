@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const speech = new SpeechSynthesisUtterance(text);
-        speech.lang = 'en-US'; // You can set this to any language supported by the Web Speech API
+        speech.lang = 'en-US'; // Set this to any language supported by the Web Speech API
         speech.rate = 1; // Adjust the rate of speech if necessary
         speech.pitch = 1; // Adjust the pitch if necessary
 
-        // Play the audio in the audio player
+        // When speech starts
         speech.onstart = () => {
             audioPlayer.src = '';
         };
 
+        // When speech ends
         speech.onend = () => {
             const synth = window.speechSynthesis;
-            const audioBlob = new Blob([new Uint8Array(synth.speaking ? [] : [0])], { type: 'audio/wav' });
-            audioPlayer.src = URL.createObjectURL(audioBlob);
-            audioPlayer.play();
+            synth.cancel(); // Stop any ongoing speech synthesis
+            alert('Speech has finished.');
         };
 
         window.speechSynthesis.speak(speech);
