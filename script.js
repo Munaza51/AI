@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const textInput = document.getElementById('textInput');
     const generateBtn = document.getElementById('generateBtn');
