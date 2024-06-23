@@ -10,6 +10,8 @@ body {
     line-height: 1.6;
     background: #f5f5f5;
     color: #333;
+    background: url('https://www.freevector.com/uploads/vector/preview/3352/FreeVector-Dynamic-Background.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Make sure the background covers the whole page */
 }
 
 .container {
