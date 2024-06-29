@@ -1,4 +1,4 @@
-Sure! Here's a short README file for a simple AI Generator app that converts text to voice.
+
 AI Text-to-Voice Generator
 
 Welcome to the AI Text-to-Voice Generator! This application allows you to convert written text into spoken words using advanced AI technology.
